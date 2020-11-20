@@ -1,0 +1,300 @@
+@font-face {
+  font-family: InfiniBold;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../public/static/fonts/infini-bold.otf");
+}
+@font-face {
+  font-family: InfiniPicto;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../public/static/fonts/infini-picto.otf");
+}
+
+@font-face {
+  font-family: Infini;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../public/static/fonts/infini-regular.otf");
+}
+
+:root {
+  --color-primary: #cf8d26;
+  --color-secondary: #9acad2;
+  --color-white: #f0e9e2;
+  --color-black: #07070d;
+  --color-blue: #3060ad;
+  --color-orange: #9c5021;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes move {
+  0%,
+  100% {
+    transform: translateY(24);
+  }
+  50% {
+    transform: translateY(24px);
+  }
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translateY(24);
+  }
+  50% {
+    transform: translateY(24px);
+  }
+}
+
+@-webkit-keyframes number01 {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-moz-keyframes number01 {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@-o-keyframes number01 {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes number01 {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@-webkit-keyframes number02 {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@-moz-keyframes number02 {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@-o-keyframes number02 {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@keyframes number02 {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@-webkit-keyframes number03 {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@-moz-keyframes number03 {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@-o-keyframes number03 {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@keyframes number03 {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+.end {
+  justify-self: end;
+}
+.center {
+  justify-self: center;
+}
+.mt {
+  margin-top: 32px;
+}
+
+.animation01 {
+  animation: number01 4s linear infinite;
+}
+.animation02 {
+  animation: number02 4s linear infinite;
+}
+.animation03 {
+  animation: number03 4s linear infinite;
+}
+
+.imgFooter {
+  max-width: 100px;
+  margin: 0 16px;
+}
+.imgFooterBig {
+  max-width: 60px;
+  margin: 0 16px;
+}
+
+.imgFooterPatrocinio {
+  max-width: 140px;
+  margin: 0 16px;
+}
+
+.align-left {
+  text-align: end;
+  margin-right: auto;
+}
+.align-right {
+  text-align: start;
+  margin-left: auto;
+}
+@media screen and (max-width: 768px) {
+  .imgFooter {
+    margin: 16px;
+  }
+  .imgFooterPatrocinio {
+    margin-top: 16px;
+  }
+  .align-left {
+    justify-self: center;
+    margin: 0 auto;
+    text-align: start;
+    /* height: auto; */
+  }
+
+  .hideMobile {
+    display: none;
+  }
+
+  .align-right {
+    justify-self: center;
+    margin: 0 auto;
+    text-align: start;
+    /* height: auto; */
+  }
+}
+
+.align-left {
+  text-align: end;
+  margin-right: auto;
+}
+.align-right {
+  text-align: start;
+  margin-left: auto;
+}
+
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.fadeIn {
+-webkit-animation: fadeIn 1s ease-in-out;
+-moz-animation: fadeIn 1s ease-in-out;
+-o-animation: fadeIn 1s ease-in-out;
+animation: fadeIn 1s ease-in-out;
+}
